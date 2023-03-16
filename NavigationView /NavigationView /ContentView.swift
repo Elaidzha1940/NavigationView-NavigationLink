@@ -26,6 +26,7 @@ struct BlueScreen: View {
         ZStack {
             
             Color.blue.opacity(0.2).edgesIgnoringSafeArea(.all)
+                .navigationTitle("Blue Screen")
         }
     }
 }
