@@ -12,11 +12,11 @@ struct ContentView: View {
     
         NavigationView {
             
-            NavigationLink("Next page",
+            NavigationLink("Next Page",
                            destination: BlueScreen())
             
+            .navigationTitle("Potfolio")
         }
-        .navigationTitle("Potfolio")
     }
 }
 
@@ -27,6 +27,8 @@ struct BlueScreen: View {
             
             Color.blue.opacity(0.2).edgesIgnoringSafeArea(.all)
                 .navigationTitle("Blue Screen")
+            
+            NavigationLink("Next Page 1", destination: Text("Brown Screen"))
         }
     }
 }
