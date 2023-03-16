@@ -9,15 +9,23 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-    
+        
         NavigationView {
             
             NavigationLink("Next Page",
                            destination: BlueScreen())
             
             .navigationTitle("Potfolio")
-            .navigationBarItems(leading: Text("next"),
-                                trailing: Text("next1"))
+            .navigationBarItems(
+                leading: Text("next"),
+                trailing:
+                    NavigationLink(
+                        destination: BlueScreen(),
+                        label: {
+                            Text("next")
+                            
+                        })
+            )
         }
     }
 }
