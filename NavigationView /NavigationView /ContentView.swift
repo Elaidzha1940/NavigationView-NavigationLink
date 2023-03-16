@@ -32,7 +32,9 @@ struct BlueScreen: View {
                 .navigationTitle("Blue Screen")
             
             VStack {
-                Button(<#T##title: StringProtocol##StringProtocol#>, action: <#T##() -> Void#>)
+                Button("Back Button") {
+                    presentationMode.wrappedValue.dismiss()
+                }
                 
                 NavigationLink("Next Page 1", destination: Text("Brown Screen"))
             }
