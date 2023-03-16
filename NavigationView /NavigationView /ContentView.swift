@@ -16,6 +16,8 @@ struct ContentView: View {
                            destination: BlueScreen())
             
             .navigationTitle("Potfolio")
+            .navigationBarItems(leading: Text("next"),
+                                trailing: Text("next1"))
         }
     }
 }
