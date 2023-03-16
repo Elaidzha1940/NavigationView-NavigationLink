@@ -12,7 +12,8 @@ struct ContentView: View {
     
         NavigationView {
             
-            NavigationLink(
+            NavigationLink("Next page",
+                           destination: Text("Hello!"))
             
         }
         .navigationTitle("Potfolio")
