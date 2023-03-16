@@ -13,7 +13,7 @@ struct ContentView: View {
         NavigationView {
             
             NavigationLink("Next page",
-                           destination: Text("Hello!"))
+                           destination: BlueScreen())
             
         }
         .navigationTitle("Potfolio")
@@ -23,6 +23,10 @@ struct ContentView: View {
 struct BlueScreen: View {
     var body: some View {
         
+        ZStack {
+            
+            Color.blue.opacity(0.2).edgesIgnoringSafeArea(.all)
+        }
     }
 }
 
