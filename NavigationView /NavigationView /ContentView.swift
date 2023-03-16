@@ -21,6 +21,9 @@ struct ContentView: View {
 }
 
 struct BlueScreen: View {
+    
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         
         ZStack {
@@ -28,7 +31,11 @@ struct BlueScreen: View {
             Color.blue.opacity(0.2).edgesIgnoringSafeArea(.all)
                 .navigationTitle("Blue Screen")
             
-            NavigationLink("Next Page 1", destination: Text("Brown Screen"))
+            VStack {
+                Button(<#T##title: StringProtocol##StringProtocol#>, action: <#T##() -> Void#>)
+                
+                NavigationLink("Next Page 1", destination: Text("Brown Screen"))
+            }
         }
     }
 }
